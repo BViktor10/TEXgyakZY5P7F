@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[english,magyar,latin]{babel}
+\usepackage{t1enc}
+\usepackage{xcolor}
+\usepackage{graphicx} 
+\usepackage{lipsum}
+\usepackage{hulipsum}
+\usepackage{blindtext}
+\begin{document}
+\title{Cím}
+\author{Berki Viktor}
+\date{2022.09.06.}
+\maketitle
+\ttfamily
+\bfseries
+teszt\\
+\scshape
+\itshape
+teszt\\
+\slshape
+\sffamily
+teszt\\
+\emph{teszt}\\
+\textcolor{red}{teszt}\\
+\reflectbox{teszt}\\
+\framebox{teszt}\\
+\rotatebox{270}{ \scalebox{2.0}[0.5]{teszt}}\\ \\ \\
+\rotatebox{90}{teszt}\\
+\rotatebox{270}{teszt}\\ \\
+\reflectbox{ \colorbox{black}{\textcolor{white}{teszt}}}\\
+\fcolorbox{red}{white}{\textcolor{red}{teszt}}\\
+\selectlanguage{latin}
+\lipsum[1]\\\\
+\selectlanguage{magyar}
+\today
+\hulipsum[1]\\\\
+\selectlanguage{english}
+\today
+\blindtext[1]\\\\
+\reflectbox{\lipsum[1]}\\\\
+\raggedleft
+\selectlanguage{magyar}
+\today
+\hulipsum[1] \\
+\centering
+ \linespread{1.6}
+ \selectlanguage{english}
+ \today
+ \blindtext[1]\\
+  \linespread{1}
+ \frenchspacing teszt teszt teszt
+\end{document}
